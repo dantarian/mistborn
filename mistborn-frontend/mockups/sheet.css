@@ -159,6 +159,15 @@ section.powers section header {
   font-size: 1.2em;
 }
 
+section.powers section.allomancy header::after {
+  content: "Allomancy";
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: block;
+  padding-top: 0.2rem;
+}
+
 section.powers section .rating::before {
   content: "Rating ";
   text-transform: uppercase;
