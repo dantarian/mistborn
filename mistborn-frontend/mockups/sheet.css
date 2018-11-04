@@ -1,9 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   grid-gap: 1em;
   font-family: Verdana, sans-serif;
-  padding: 0.5em;
+  padding: 1em;
   background-image: url('iswanto-arif-682107-unsplash.jpg');
   background-color: rgba(255, 255, 255, 0.5);
   background-repeat: no-repeat;
@@ -11,10 +15,160 @@ body {
   background-position: center top;
   background-size: cover;
   background-blend-mode: lighten;
+  max-width: 1440px;
+  margin: auto;
 }
 
+/* Layouts */
+
+/* Default */
 body > header {
+  grid-column: 1 / span 12;
+}
+
+section.crew, section.characteristics {
+  grid-column: span 6;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0.5em;
+}
+
+section.crew header, section.characteristics header {
+  grid-column: span 12;
+}
+
+section.crew section, section.characteristics section {
+  grid-column: span 6;
+}
+
+section.attributes, section.standings, section.resiliences {
+  grid-column: span 4;
+}
+
+section.traits-and-burdens {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0.5em;
+  grid-auto-flow: row dense;
+}
+
+section.traits-and-burdens > header {
+  grid-column: span 12;
+}
+
+section.traits-and-burdens section.standard {
   grid-column: 1 / span 6;
+}
+
+section.traits-and-burdens section {
+  grid-column: 7 / span 6;
+}
+
+section.tragedy,
+section.destiny {
+  grid-column: span 6;
+}
+
+section.secrets-known {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0.5em;
+}
+
+section.secrets-known > header {
+  grid-column: span 12;
+}
+
+section.secrets-known > div.secret {
+  grid-column: span 6;
+}
+
+section.powers {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0.5em;
+}
+
+section.powers > header {
+  grid-column: span 12;
+}
+
+section.powers > section {
+  grid-column: span 3;
+}
+
+section.equipment {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0.5em;
+}
+
+section.equipment > header {
+  grid-column: span 12;
+}
+
+section.equipment section {
+  grid-column: span 2;
+}
+
+footer {
+  grid-column: span 12;
+  text-align: right;
+}
+
+/* Mobile */
+@media only screen and (max-width: 425px) {
+  section.crew,
+  section.characteristics,
+  section.attributes,
+  section.standings,
+  section.resiliences,
+  section.tragedy,
+  section.destiny {
+    grid-column: span 12;
+  }
+
+  section.traits-and-burdens section.standard {
+    grid-column: 1 / span 12 !important;
+  }
+
+  section.traits-and-burdens section {
+    grid-column: 1 / span 12 !important;
+  }
+
+  section.secrets-known div.secret {
+    grid-column: 1 / span 12 !important;
+  }
+
+  section.powers section {
+    grid-column: 1 / span 12 !important;
+  }
+
+  section.equipment {
+    grid-row-gap: 1em !important;
+  }
+
+  section.equipment section {
+    grid-column: 1 / span 12 !important;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  section.powers section {
+    grid-column: span 6 !important;
+  }
+
+  section.equipment {
+    grid-row-gap: 1em !important;
+  }
+
+  section.equipment section {
+    grid-column: span 4 !important;
+  }
 }
 
 h1, h2 {
@@ -31,23 +185,13 @@ span.nickname::after {
 
 body > section {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 0.5em;
+  padding: 0.5em 1em 1em 1em;
+  border-radius: 0.5em;
 }
 
 body > section > header {
   font-size: 1.4em;
   border-bottom: 1px solid grey;
-}
-
-section.crew, section.characteristics {
-  grid-column: span 3;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0.5em;
-}
-
-section.crew header, section.characteristics header {
-  grid-column: span 2;
 }
 
 section.crew section header, 
@@ -59,10 +203,6 @@ section.traits-and-burdens section header{
   font-size: 0.8em;
   text-transform: uppercase;
   font-weight: bold;
-}
-
-section.attributes, section.standings, section.resiliences {
-  grid-column: span 2;
 }
 
 section.attributes table,
@@ -93,37 +233,6 @@ section.resiliences table .damage {
   text-align: center;
 }
 
-section.traits-and-burdens,
-section.secrets-known,
-section.powers,
-section.equipment {
-  grid-column: span 6;
-}
-
-section.tragedy,
-section.destiny {
-  grid-column: span 3;
-}
-
-section.traits-and-burdens {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0.5em;
-  grid-auto-flow: row dense;
-}
-
-section.traits-and-burdens > header {
-  grid-column: span 2;
-}
-
-section.traits-and-burdens section.standard {
-  grid-column: 1;
-}
-
-section.traits-and-burdens section {
-  grid-column: 2;
-}
-
 section.traits-and-burdens section header,
 section.traits-and-burdens section main {
   display: inline;
@@ -132,26 +241,6 @@ section.traits-and-burdens section main {
 section.tragedy main,
 section.destiny main {
   margin-top: 0.5em;
-}
-
-section.secrets-known {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0.5em;
-}
-
-section.secrets-known > header {
-  grid-column: span 2;
-}
-
-section.powers {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.5em;
-}
-
-section.powers > header {
-  grid-column: span 3;
 }
 
 section.powers section header {
@@ -184,21 +273,6 @@ section.powers section .stunts::before {
 
 section.powers section .stunts .stunt {
   padding-left: 1em;
-}
-
-section.equipment {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 0.5em;
-}
-
-section.equipment > header {
-  grid-column: span 6;
-}
-
-section.equipment section {
-  /* border: 1px solid gray; */
-  padding: 0.5em;
 }
 
 section.equipment section.prop header::after {
