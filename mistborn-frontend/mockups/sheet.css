@@ -1,0 +1,218 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1em;
+  font-family: Verdana, sans-serif;
+  padding: 0.5em;
+}
+
+body > header {
+  grid-column: 1 / span 6;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+span.nickname::before {
+  content: '- "';
+}
+
+span.nickname::after {
+  content: '"';
+}
+
+body > section {
+  background-color: lightgrey;
+  padding: 0.5em;
+}
+
+body > section > header {
+  font-size: 1.4em;
+  border-bottom: 1px solid grey;
+}
+
+section.crew, section.characteristics {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5em;
+}
+
+section.crew header, section.characteristics header {
+  grid-column: span 2;
+}
+
+section.crew section header, 
+section.characteristics section header,
+section.attributes thead, 
+section.standings thead,
+section.resiliences thead,
+section.traits-and-burdens section header{
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+section.attributes, section.standings, section.resiliences {
+  grid-column: span 2;
+}
+
+section.attributes table,
+section.standings table,
+section.resiliences table {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 2% 0.5em;
+  margin-top: 0.5em;
+}
+
+section.attributes table .attribute-name,
+section.standings table .standing-name,
+section.resiliences table .resilience-name {
+  width: 49%;
+}
+
+section.attributes table .dice {
+  width: 49%;
+  text-align: center;
+}
+
+section.standings table .dice,
+section.standings table .spent,
+section.resiliences table .score,
+section.resiliences table .damage {
+  width: 23.5%;
+  text-align: center;
+}
+
+section.traits-and-burdens,
+section.secrets-known,
+section.powers,
+section.equipment {
+  grid-column: span 6;
+}
+
+section.tragedy,
+section.destiny {
+  grid-column: span 3;
+}
+
+section.traits-and-burdens {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5em;
+  grid-auto-flow: row dense;
+}
+
+section.traits-and-burdens > header {
+  grid-column: span 2;
+}
+
+section.traits-and-burdens section.standard {
+  grid-column: 1;
+}
+
+section.traits-and-burdens section {
+  grid-column: 2;
+}
+
+section.traits-and-burdens section header,
+section.traits-and-burdens section main {
+  display: inline;
+}
+
+section.tragedy main,
+section.destiny main {
+  margin-top: 0.5em;
+}
+
+section.secrets-known {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5em;
+}
+
+section.secrets-known > header {
+  grid-column: span 2;
+}
+
+section.powers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5em;
+}
+
+section.powers > header {
+  grid-column: span 3;
+}
+
+section.powers section header {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+section.powers section .rating::before {
+  content: "Rating ";
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+section.powers section .stunts::before {
+  content: "Stunts";
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+section.powers section .stunts .stunt {
+  padding-left: 1em;
+}
+
+section.equipment {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.5em;
+}
+
+section.equipment > header {
+  grid-column: span 6;
+}
+
+section.equipment section {
+  /* border: 1px solid gray; */
+  padding: 0.5em;
+}
+
+section.equipment section.prop header::after {
+  content: "Prop";
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  display: block;
+  padding-top: 0.2rem;
+}
+
+section.equipment section .charges::before {
+  content: "Charges ";
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+section.equipment section .damage::before {
+  content: "Damage ";
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+section.equipment section .range::before {
+  content: "Range ";
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+
