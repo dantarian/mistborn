@@ -114,6 +114,21 @@ section.equipment section {
   grid-column: span 2;
 }
 
+section.advancements {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-gap: 0.5em;
+}
+
+section.advancements > header {
+  grid-column: span 20;
+}
+
+section.advancements > div {
+  text-align: center;
+}
+
 footer {
   grid-column: span 12;
   text-align: right;
@@ -154,6 +169,14 @@ footer {
   section.equipment section {
     grid-column: 1 / span 12 !important;
   }
+
+  section.advancements {
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+
+  section.advancements > header {
+    grid-column: span 5 !important;
+  }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
@@ -167,6 +190,24 @@ footer {
 
   section.equipment section {
     grid-column: span 4 !important;
+  }
+
+  section.advancements {
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+
+  section.advancements > header {
+    grid-column: span 5 !important;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  section.advancements {
+    grid-template-columns: repeat(10, 1fr) !important;
+  }
+
+  section.advancements > header {
+    grid-column: span 10 !important;
   }
 }
 
