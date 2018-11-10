@@ -23,6 +23,13 @@ body {
 /* Default */
 body > header {
   grid-column: 1 / span 12;
+  display: flex;
+  justify-content: center
+}
+
+.header-bookended {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 section.crew, section.characteristics {
@@ -136,6 +143,10 @@ footer {
 
 /* Mobile */
 @media only screen and (max-width: 425px) {
+  .header-bookend {
+    display: none;
+  }
+
   section.crew,
   section.characteristics,
   section.attributes,
@@ -215,6 +226,13 @@ footer {
   height: 1em;
   width: 1em;
   vertical-align: middle;
+}
+
+.bigicon {
+  display: block:
+  padding: 1em;
+  height: 8em;
+  width: 8em;
 }
 
 h1, h2 {
