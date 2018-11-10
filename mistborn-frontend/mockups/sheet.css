@@ -211,6 +211,12 @@ footer {
   }
 }
 
+.icon {
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+}
+
 h1, h2 {
   text-align: center;
 }
@@ -232,6 +238,7 @@ body > section {
 body > section > header {
   font-size: 1.4em;
   border-bottom: 1px solid grey;
+  line-height: 1.6em;
 }
 
 section.crew section header, 

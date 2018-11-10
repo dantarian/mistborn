@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="191.72mm" height="191.72mm" version="1.1" viewBox="0 0 191.72 191.72" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-6.9314 -33.878)">
+  <g transform="matrix(16.242,0,0,16.242,-2649.5,-1001)">
+   <path transform="scale(.26458)" d="m627.51 247.65a21.375 21.375 0 0 0-7.2598 15.992 21.375 21.375 0 0 0 21.375 21.375 21.375 21.375 0 0 0 21.141-18.361l-0.25585-0.0684a18 15 0 0 1-17.76 12.68 18 15 0 0 1-18-15 18 15 0 0 1 6.8613-11.779l1.2832-4.8379z"/>
+   <path d="m170.4 71.051-6.4111-5.7491-0.43318 0.08657 1.562-1.562-0.0866 0.43318z" fill-rule="evenodd"/>
+   <circle cx="171.97" cy="71.804" r=".88533"/>
+  </g>
+ </g>
+</svg>

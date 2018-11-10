@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="184.12mm" height="184.12mm" version="1.1" viewBox="0 0 184.12 184.12" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(91.05 -243.89)">
+  <g transform="matrix(13.122,0,0,13.122,-874.61,-192.7)">
+   <path transform="scale(.26458)" d="m253.29 138.38a20.203 20.203 0 0 0-19.996 17.498l5.8144 3.5957a14.142 15.901 0 0 1 13.93-13.248 14.142 15.901 0 0 1 14.143 15.9 14.142 15.901 0 0 1-13.502 15.877l-0.41992 0.78125a20.203 20.203 0 0 0 0.0312 2e-3 20.203 20.203 0 0 0 20.203-20.203 20.203 20.203 0 0 0-20.203-20.203z"/>
+   <path d="m66.373 43.558-4.8326-4.3736-0.4431 0.10283 1.5978-1.8554-0.08854 0.51453z" fill-rule="evenodd"/>
+   <path d="m66.214 41.134-2.9361-6.6772 2.166-1.1849-0.31105 0.65437z" fill-rule="evenodd"/>
+   <circle cx="67.988" cy="41.677" r=".88533"/>
+  </g>
+ </g>
+</svg>
