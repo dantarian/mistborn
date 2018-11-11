@@ -1,0 +1,207 @@
+{
+  "name": "Kalden",
+  "nickname": "Scars",
+  "concept": "Pewterarm Brawler",
+  "crew": {
+    "name": "The Goldblades",
+    "cause": "Make Urteau ours",
+    "target": "Steel Ministry",
+    "method": "Theft/Spying"
+  },
+  "characteristics": {
+    "race": "Skaa",
+    "gender": "Male",
+    "height": "6'0\"",
+    "weight": "250lbs"
+  },
+  "attributes": {
+    "physique": {
+      "dice": 6
+    },
+    "charm": {
+      "dice": 2
+    },
+    "wits": {
+      "dice": 6
+    }
+  },
+  "standings": {
+    "resources": {
+      "dice": 5,
+      "spent": 0
+    },
+    "influence": {
+      "dice": 6,
+      "spent": 0
+    },
+    "spirit": {
+      "dice": 3,
+      "spent": 0
+    }
+  },
+  "resiliences": {
+    "health": {
+      "score": 11,
+      "damage": 0
+    },
+    "reputation": {
+      "score": 8,
+      "damage": 0
+    },
+    "willpower": {
+      "score": 9,
+      "damage": 0
+    }
+  },
+  "traits_and_burdens": [
+    {
+      "type": "Drive",
+      "standard": true,
+      "text": "Give the Skaa hope"
+    },
+    {
+      "type": "Profession",
+      "standard": true,
+      "text": "Pit fighter"
+    },
+    {
+      "type": "Speciality",
+      "standard": true,
+      "text": "Underworld contacts"
+    },
+    {
+      "type": "Feature",
+      "standard": true,
+      "text": "Unusually scarred and ugly"
+    },
+    {
+      "type": "Personality",
+      "standard": true,
+      "text": "Relentless"
+    },
+    {
+      "type": "Trait",
+      "standard": false,
+      "text": "Comfortable in Wilderness"
+    }
+  ],
+  "tragedy": "My noble father paid to have me killed when he found out about me, ending my pit-fighting career and forcing me to abandon the life I'd known.",
+  "destiny": "To return non-Lord-Ruler religion to the Skaa.",
+  "secrets_known": [
+    {
+      "used": false,
+      "text": "Existence of nicrosil as a metal, and its allomantic effects."
+    },
+    { 
+      "used": false,
+      "text": "House Demaux were breeding mistings via a brothel."
+    },
+    {
+      "used": false,
+      "text": "House Venture's research mines, and the experiments conducted there."
+    },
+    {
+      "used": false,
+      "text": "How Koloss are made."
+    },
+    {
+      "used": false,
+      "text": "Basics of hemallurgy."
+    },
+    {
+      "used": false,
+      "text": "Existence of Preservation and Ruin (but not their names)."
+    },
+    {
+      "used": false,
+      "text": "Steel Ministry dopes nobles' wine with atium."
+    }
+  ],
+  "powers": [
+    {
+      "name": "Pewter",
+      "type": "Allomancy",
+      "rating": 8,
+      "savant": false,
+      "stunts": [
+        {
+          "name": "Unconscious Burning",
+          "benefit": "..."
+        },
+        {
+          "name": "Slow Burning",
+          "benefit": "..."
+        },
+        {
+          "name": "Denser Tissues",
+          "benefit": "..."
+        },
+        {
+          "name": "Extreme Speed",
+          "benefit": "..."
+        },
+        {
+          "name": "Inhuman Endurance (Trait)",
+          "benefit": "..."
+        }
+      ]
+    },
+    {
+      "name": "Skaa",
+      "type": "Other",
+      "stunts": [
+        {
+          "name": "Urban Racer",
+          "benefit": "..."
+        },
+        {
+          "name": "Friends in Low Places",
+          "benefit": "..."
+        }
+      ]
+    }
+  ],
+  "equipment": [
+    {
+      "name": "Misting Vial of Pewter",
+      "prop": true,
+      "type": "Vial",
+      "charges": 3
+    },
+    {
+      "name": "Misting Vial of Pewter",
+      "prop": true,
+      "type": "Vial",
+      "charges": 3
+    },
+    {
+      "name": "Violin",
+      "prop": true,
+      "type": "Other"
+    },
+    {
+      "name": "Short Staff",
+      "prop": true,
+      "type": "Weapon",
+      "damage": 1,
+      "range": "Touch/Striking"
+    },
+    {
+      "name": "Leather Armour",
+      "prop": true,
+      "type": "Armour",
+      "damage": -1
+    }
+  ],
+  "advancements": 8,
+  "history": {
+    "current_version": 1,
+    "versions": [
+      {
+        "version": 1,
+        "timestamp": "2018-11-11 14:22",
+        "change": "Create"
+      }
+    ]
+  }
+}

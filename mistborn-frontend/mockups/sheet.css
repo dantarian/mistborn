@@ -235,6 +235,14 @@ footer {
   width: 8em;
 }
 
+.actions {
+  float: right;
+}
+
+[contenteditable=true] {
+  border: #CCC solid 1px;
+}
+
 h1, h2 {
   text-align: center;
 }
