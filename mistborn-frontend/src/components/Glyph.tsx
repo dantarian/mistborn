@@ -1,7 +1,7 @@
 import * as React from "react";
 import './Glyph.css';
 
-type GlyphName = 
+export type GlyphName = 
   "aluminium"
   | "atium"
   | "bendalloy"

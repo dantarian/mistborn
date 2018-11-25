@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import Glyph from '../src/components/Glyph';
+import Section from "../src/components/Section";
 
 storiesOf('Glyph', module)
   .add('aluminium', () => <Glyph name="aluminium" />)
@@ -26,3 +27,5 @@ storiesOf('Glyph', module)
   .add('with big=true', () => <Glyph name="steel" big={true} />)
   .add('with big=false', () => <Glyph name="steel" big={false} />);
 
+storiesOf('Section', module)
+  .add('simple section', () => <Section glyph="steel" title="Simple Section" />);
