@@ -31,7 +31,9 @@ const Glyph: React.SFC<IGlyphProps> = (props) => {
   return (
     <img 
       src={require(`./images/steel_alphabet/${props.name}.svg`)}
-      className={getCssClass(props.big)} />
+      className={getCssClass(props.big)}
+      alt=""
+    />
   );
 };
 
