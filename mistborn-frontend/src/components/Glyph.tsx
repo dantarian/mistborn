@@ -1,4 +1,5 @@
 import * as React from "react";
+import './Glyph.css';
 
 type GlyphName = 
   "aluminium"
@@ -26,8 +27,12 @@ export interface IGlyphProps {
 }
 
 const Glyph: React.SFC<IGlyphProps> = (props) => {
-  return <img src={require(`./images/steel_alphabet/${props.name}.svg`)} />;
-};
+  return (
+    <img 
+      src={require(`./images/steel_alphabet/${props.name}.svg`)}
+      className="icon"/>
+    );
+  };
 
 export default Glyph;
 
