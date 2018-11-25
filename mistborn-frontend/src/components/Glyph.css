@@ -3,3 +3,8 @@
   width: 1em;
   vertical-align: middle;
 }
+
+.big {
+  height: 8em;
+  width: 8em;
+}

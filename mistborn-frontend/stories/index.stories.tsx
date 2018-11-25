@@ -22,5 +22,7 @@ storiesOf('Glyph', module)
   .add('pewter', () => <Glyph name="pewter" />)
   .add('steel', () => <Glyph name="steel" />)
   .add('tin', () => <Glyph name="tin" />)
-  .add('zinc', () => <Glyph name="zinc" />);
+  .add('zinc', () => <Glyph name="zinc" />)
+  .add('with big=true', () => <Glyph name="steel" big={true} />)
+  .add('with big=false', () => <Glyph name="steel" big={false} />);
 

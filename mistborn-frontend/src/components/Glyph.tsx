@@ -24,15 +24,20 @@ type GlyphName =
 
 export interface IGlyphProps {
   name: GlyphName;
+  big?: boolean;
 }
 
 const Glyph: React.SFC<IGlyphProps> = (props) => {
   return (
     <img 
       src={require(`./images/steel_alphabet/${props.name}.svg`)}
-      className="icon"/>
-    );
-  };
+      className={getCssClass(props.big)} />
+  );
+};
+
+const getCssClass: (big?: boolean) => string = (big = false) => {
+  return ( big ? "big " : "" ) + "icon";
+};
 
 export default Glyph;
 
