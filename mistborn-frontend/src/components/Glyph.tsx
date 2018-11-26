@@ -1,8 +1,8 @@
 import * as React from "react";
-import './Glyph.css';
+import "./Glyph.css";
 
-export type GlyphName = 
-  "aluminium"
+export type GlyphName =
+  | "aluminium"
   | "atium"
   | "bendalloy"
   | "brass"
@@ -18,28 +18,25 @@ export type GlyphName =
   | "malatium"
   | "nicrosil"
   | "pewter"
-  | "steel" 
+  | "steel"
   | "tin"
-  | "zinc"
+  | "zinc";
 
 export interface IGlyphProps {
   name: GlyphName;
   big?: boolean;
 }
 
-const Glyph: React.SFC<IGlyphProps> = (props) => {
-  return (
-    <img 
-      src={require(`./images/steel_alphabet/${props.name}.svg`)}
-      className={getCssClass(props.big)}
-      alt=""
-    />
-  );
-};
+const Glyph: React.SFC<IGlyphProps> = props => (
+  <img
+    src={require(`./images/steel_alphabet/${props.name}.svg`)}
+    className={getCssClass(props.big)}
+    alt=""
+  />
+);
 
 const getCssClass: (big?: boolean) => string = (big = false) => {
-  return ( big ? "big " : "" ) + "icon";
+  return (big ? "big " : "") + "icon";
 };
 
 export default Glyph;
-

@@ -1,4 +1,4 @@
-import {shallow} from 'enzyme';
+import { shallow } from "enzyme";
 import "jest-enzyme";
 import * as React from "react";
 import Glyph from "./Glyph";
@@ -25,6 +25,7 @@ describe("Glyph", () => {
       expect(glyph).toContainMatchingElement("[alt='']");
     });
   });
+
   describe("Big glyph", () => {
     const glyph = shallow(<Glyph name="steel" big={true} />);
 
@@ -32,6 +33,7 @@ describe("Glyph", () => {
       expect(glyph).toHaveClassName("big");
     });
   });
+
   describe("Non-big glyph", () => {
     const glyph = shallow(<Glyph name="steel" big={false} />);
 
