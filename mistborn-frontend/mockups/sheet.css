@@ -8,7 +8,7 @@ body {
   grid-gap: 1em;
   font-family: Verdana, sans-serif;
   padding: 1em;
-  background-image: url('iswanto-arif-682107-unsplash.jpg');
+  background-image: url("iswanto-arif-682107-unsplash.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;
@@ -24,7 +24,7 @@ body {
 body > header {
   grid-column: 1 / span 12;
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
 
 .header-bookended {
@@ -32,22 +32,27 @@ body > header {
   padding-right: 1em;
 }
 
-section.crew, section.characteristics {
+section.crew,
+section.characteristics {
   grid-column: span 6;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 0.5em;
 }
 
-section.crew header, section.characteristics header {
+section.crew header,
+section.characteristics header {
   grid-column: span 12;
 }
 
-section.crew section, section.characteristics section {
+section.crew section,
+section.characteristics section {
   grid-column: span 6;
 }
 
-section.attributes, section.standings, section.resiliences {
+section.attributes,
+section.standings,
+section.resiliences {
   grid-column: span 4;
 }
 
@@ -229,7 +234,7 @@ footer {
 }
 
 .bigicon {
-  display: block:
+  display: block;
   padding: 1em;
   height: 8em;
   width: 8em;
@@ -239,11 +244,12 @@ footer {
   float: right;
 }
 
-[contenteditable=true] {
-  border: #CCC solid 1px;
+[contenteditable="true"] {
+  border: #ccc solid 1px;
 }
 
-h1, h2 {
+h1,
+h2 {
   text-align: center;
 }
 
@@ -267,12 +273,12 @@ body > section > header {
   line-height: 1.6em;
 }
 
-section.crew section header, 
+section.crew section header,
 section.characteristics section header,
-section.attributes thead, 
+section.attributes thead,
 section.standings thead,
 section.resiliences thead,
-section.traits-and-burdens section header{
+section.traits-and-burdens section header {
   font-size: 0.8em;
   text-transform: uppercase;
   font-weight: bold;
@@ -377,5 +383,3 @@ section.equipment section .range::before {
   font-size: 0.8em;
   font-weight: bold;
 }
-
-
