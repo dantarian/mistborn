@@ -1,5 +1,6 @@
 import * as React from "react";
 import Glyph, { GlyphName } from "./Glyph";
+import "./Section.css";
 
 export interface ISectionProps {
   title: string;
@@ -11,10 +12,10 @@ const Section: React.SFC<ISectionProps> = props => {
   const contents = props.children ? <main>{props.children}</main> : "";
 
   return (
-    <section className={dashCase(props.title)}>
+    <section className={"section " + dashCase(props.title)}>
       <header>
         <Glyph name={props.glyph} />
-        {props.title}
+        {" " + props.title}
       </header>
       {contents}
     </section>

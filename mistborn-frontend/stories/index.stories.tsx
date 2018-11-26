@@ -4,6 +4,8 @@ import { storiesOf } from "@storybook/react";
 import Glyph from "../src/components/Glyph";
 import Section from "../src/components/Section";
 
+import "../src/index.css";
+
 storiesOf("Glyph", module)
   .add("aluminium", () => <Glyph name="aluminium" />)
   .add("atium", () => <Glyph name="atium" />)
@@ -32,5 +34,16 @@ storiesOf("Section", module)
   .add("with text contents", () => (
     <Section glyph="aluminium" title="Section With Text">
       Here is some text.
+    </Section>
+  ))
+  .add("with element contents", () => (
+    <Section glyph="pewter" title="Section With Element">
+      <div>This is a div element.</div>
+    </Section>
+  ))
+  .add("with mulitple element contents", () => (
+    <Section glyph="bronze" title="Section With Multiple Elements">
+      <div>This is a div element.</div>
+      <div>This is another div element.</div>
     </Section>
   ));
