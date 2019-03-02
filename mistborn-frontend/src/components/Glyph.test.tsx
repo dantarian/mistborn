@@ -1,7 +1,7 @@
-import { shallow } from "enzyme";
+import { mount, shallow } from "enzyme";
 import "jest-enzyme";
 import * as React from "react";
-import Glyph from "./Glyph";
+import Glyph, { randomGlyph } from "./Glyph";
 
 describe("Glyph", () => {
   describe("Simple usage", () => {
@@ -40,5 +40,26 @@ describe("Glyph", () => {
     it("is not big", () => {
       expect(glyph).not.toHaveClassName("big");
     });
+  });
+
+  describe("With alt text", () => {
+    const glyph = shallow(<Glyph name="steel" altText="Description" />);
+
+    it("has alt text on the image", () => {
+      expect(glyph).toContainMatchingElement("img[alt='Description']");
+    });
+  });
+});
+
+describe("randomGlyph", () => {
+  it("produces a random glyph", () => {
+    const glyph = mount(randomGlyph());
+    expect(glyph).toHaveDisplayName("Glyph");
+  });
+
+  it("can take a string argument for alt text", () => {
+    const glyph = mount(randomGlyph("Description"));
+    expect(glyph).toHaveDisplayName("Glyph");
+    expect(glyph).toContainMatchingElement("img[alt='Description']");
   });
 });
