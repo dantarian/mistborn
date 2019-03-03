@@ -12,6 +12,9 @@
 # Cache
 /.cache
 
+# VSCode Workspace
+*.code-workspace
+
 # misc
 .DS_Store
 .env.local
