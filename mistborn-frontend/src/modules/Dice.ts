@@ -21,3 +21,10 @@ export const rollMany: (dice: number, sides?: number) => number[] = (
 export const rollOne: (sides?: number) => number = sides => {
   return Math.floor(Math.random() * (sides || 6)) + 1;
 };
+
+/**
+ * Works out the number of dice to roll for a given pool size.
+ * @param poolSize the size of the pool
+ */
+export const numberOfDice: (poolSize: number) => number = poolSize =>
+  Math.min(10, Math.max(poolSize, 2));
