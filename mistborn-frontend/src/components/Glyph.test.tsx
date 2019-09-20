@@ -11,10 +11,6 @@ describe("Glyph", () => {
       expect(glyph).toHaveDisplayName("img");
     });
 
-    it("points to an SVG", () => {
-      expect(glyph).toContainMatchingElement("[src$='.svg']");
-    });
-
     it("is not big", () => {
       expect(glyph).toHaveClassName("icon");
       expect(glyph).not.toHaveClassName("big");
