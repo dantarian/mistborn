@@ -6,6 +6,7 @@ import DiceRoll from "../src/components/DiceRoll";
 import Die from "../src/components/Die";
 import Field from "../src/components/Field";
 import Glyph from "../src/components/Glyph";
+import Header from "../src/components/Header";
 import Section from "../src/components/Section";
 
 import "../src/index.css";
@@ -111,3 +112,15 @@ storiesOf("Die", module)
   .add("Rolled a 4", () => <Die value={4} />)
   .add("Rolled a 5", () => <Die value={5} />)
   .add("Rolled a nudge", () => <Die value={6} />);
+
+storiesOf("Header", module)
+  .add("Without a nickname", () => (
+    <Header name="Character Name" concept="Mistborn Character" />
+  ))
+  .add("With a nickname", () => (
+    <Header
+      name="Character Name"
+      nickname="Nick"
+      concept="Mistborn Character"
+    />
+  ));
